@@ -73,6 +73,7 @@ grid on
 % Plot the magnitude spectrum of m
 figure
 stem(freq_vect_m, mag_vect_m);
+xlim([-15000 15000]);
 xlabel('f (Hz)'); ylabel('Magnitude (V)');
 title('Magnitude spectrum of the message signal');
 grid on
@@ -80,6 +81,7 @@ grid on
 % Plot the magnitude spectrum of s
 figure
 stem(freq_vect_s, mag_vect_s);
+xlim([485000 515000]);
 xlabel('f (Hz)'); ylabel('Magnitude (V)');
 title('Magnitude spectrum of the DSB-LC amplitude modulated signal');
 grid on
@@ -107,6 +109,7 @@ legend('Original signal', 'Demodulated signal')
 % Plot the magnitude spectrum of s_baseband
 figure
 stem(freq_vect_s_baseband, mag_vect_s_baseband);
+xlim([-15000 15000]);
 xlabel('f (Hz)'); ylabel('Magnitude (V)');
 title('Magnitude spectrum of the demodulated signal');
 grid on
